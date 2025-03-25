@@ -2,3 +2,4 @@ google-generativeai
 streamlit
 pathlib
 python-dotenv
+pillow
