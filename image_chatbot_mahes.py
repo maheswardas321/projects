@@ -34,7 +34,7 @@ def send_message_to_model(message, image_path=None):
         response = chat_session.send_message([message])
     
     # Ensure "Hi Ishani" is prepended to the response without extra greetings
-    return "Hi Ishani. " + response.text.split("Hi there!")[0].strip()
+    return "Hi Ishani, " + response.text.split("Hi there!")[0].strip()
 
 def process_uploaded_image(uploaded_file):
     image = Image.open(uploaded_file)
